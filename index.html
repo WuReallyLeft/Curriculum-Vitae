@@ -24,7 +24,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active"><a class="nav-link" href="#bio">自傳</a></li>
                         <li class="nav-item"><a class="nav-link" href="#education">教育背景</a></li>
-                        <li class="nav-item"><a class="nav-link" href="LicenseAndCompetition">證照與比賽</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#LicenseAndCompetition">證照與比賽</a></li>
                         <li class="nav-item"><a class="nav-link" href="#experience">特殊經驗</a></li>
                         <li class="nav-item"><a class="nav-link" href="#proficiencies">專業技能</a></li>
                         <li class="nav-item"><a class="nav-link" href="#project">專案作品</a></li>
@@ -205,16 +205,24 @@
             <!-- 程式語言 圓形圖 -->
             <div class="col-md-6">
                 <h2>程式語言</h2>
-                <canvas id="languageChart" width="100" height="100"></canvas>
+                <div class="chartBlock">
+                    <canvas id="languageChart"></canvas>
+                </div>
+                
             </div>
 
             <div class="col-md-6">
-                <p>前端開發：React</p>
-                <p>後端開發：Node.js, Flask </p>
-                <p>RAG 開發實作：具備 Retrieval-Augmented Generation (RAG) 技術應用經驗</p>
-                <p>大型語言模型(LLM) 功能的高階框架:LangChain, LlamaIndex</p>
-                <p>資料庫：MySQL</p>
-                <p>工具與框架：Git</p>
+                <div class="card my-3">
+                    <div class="card-body">
+                        <h5 class="card-title">框架開發</h5>
+                        <p>前端開發：React</p>
+                        <p>後端開發：Node.js, Flask </p>
+                        <p>RAG 開發實作：具備 Retrieval-Augmented Generation (RAG) 技術應用經驗</p>
+                        <p>大型語言模型(LLM) 功能的高階框架:LangChain, LlamaIndex</p>
+                        <p>Android 開發：Android Studio</p>
+                        <p>工具與框架：Git</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -253,6 +261,7 @@
             type: 'pie',
             data: data,
             options: {
+                maintainAspectRatio: false,
                 responsive: true,
                 plugins: {
                     legend: {
