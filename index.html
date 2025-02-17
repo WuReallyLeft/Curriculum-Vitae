@@ -115,9 +115,34 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <h4 class="text-center">大學四年成績</h4>
-                <img src="images/score.jpg" alt="我的成績" class="img-fluid">
+            <div id="myCarouse2" class="carousel slide col-md-6" data-bs-ride="carousel">
+                <!-- 輪播指示 -->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#myCarouse2" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#myCarouse2" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#myCarouse2" data-bs-slide-to="2"></li>
+                </ol>
+                <!-- 輪播內容 -->
+                <div class="carousel-inner" data-bs-interval="2000">
+                    <div class="carousel-item active">
+                        <img src="images/score.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/score2.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/score3.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <!-- 輪播控制 -->
+                <a class="carousel-control-prev" href="#myCarouse2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarouse2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
             </div>
         </div>
     </div>
