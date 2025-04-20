@@ -37,7 +37,7 @@
     <div class="bio" id="bio">
         <div class="row">
             <div class="space"></div>
-            <h1 class="text-center">自傳</h1>
+            <h1 class="text-center">關於我</h1>
 
                 <div class="row">
                     <div class="col-md-4 text-center">
@@ -65,7 +65,7 @@
                             </p>
                             <p>
                                 除了專業課程與專案經驗外，我也十分重視自我學習，並曾自主學習Python與API整合技術。這讓我能夠快速掌握專案所需的技術，並應對新技術的挑戰與應用。這樣的學習經歷，使我對未來職業生涯充滿了信心，也讓我對軟體開發的未來充滿期待。
-                                我希望未來能成為一名軟體工程師，並在數位轉型與智能製造領域中發揮所長。這份實習將是我邁向目標的重要一步，我期望能學習如何運用ERP系統、雲端應用與數據管理來解決企業的實際問題，並藉此提升自己的專業技能，積累實務經驗。這將不僅有助於我作為軟體工程師的成長，也讓我更清楚如何在未來的職業生涯中，解決快速變動市場中的挑戰。
+                                我希望未來能成為一名軟體工程師，並在數位轉型與智能製造領域中發揮所長。我對軟體開發充滿熱情，擅於從需求分析到程式實作的全流程工作，並持續學習最新的開發技術與工具。過去除了在專案中應用 OpenAI 及 RAG 技術，我也熟悉微服務架構、RESTful API、前後端整合。未來我希望能加入具有創新力的團隊，與跨領域同事合作，透過高品質的程式碼和穩定的系統設計，共同解決實際商業問題並持續優化使用者體驗。我相信自己能快速適應新環境，並以積極的學習態度和扎實的技術基礎，為公司帶來具體貢獻。
                             </p>
                         </div>
 
@@ -318,9 +318,20 @@
 
             <!-- 程式語言 圓形圖 -->
             <div class="col-md-6">
-                <h2>程式語言</h2>
-                <div class="chartBlock">
-                    <canvas id="languageChart"></canvas>
+                <div class="card my-3">
+                    <div class="card-body">
+                        <h5 class="card-title">程式語言</h5>
+                        <table>
+                            <tr><td>C++</td><td>★★★☆☆</td></tr>
+                            <tr><td>Python</td><td>★★★★☆</td></tr>
+                            <tr><td>Java</td><td>★★★☆☆</td></tr>
+                            <tr><td>PHP</td><td>★★☆☆☆</td></tr>
+                            <tr><td>HTML</td><td>★★★★☆</td></tr>
+                            <tr><td>CSS</td><td>★★★★☆</td></tr>
+                            <tr><td>JavaScript</td><td>★★★★☆</td></tr>
+                            <tr><td>VB</td><td>★★★☆☆</td></tr>
+                          </table>                          
+                    </div>
                 </div>
 
             </div>
@@ -329,79 +340,21 @@
                 <div class="card my-3">
                     <div class="card-body">
                         <h5 class="card-title">框架開發</h5>
-                        <p>前端開發：React</p>
-                        <p>後端開發：Node.js, Flask </p>
-                        <p>RAG 開發實作：具備 Retrieval-Augmented Generation (RAG) 技術應用經驗</p>
-                        <p>大型語言模型(LLM) 功能的高階框架:LangChain, LlamaIndex</p>
-                        <p>Android 開發：Android Studio</p>
-                        <p>工具與框架：Git</p>
+                        <table>
+                            <tr><td>前端開發：</td><td>React</td></tr>
+                            <tr><td>後端開發：</td><td>Node.js, Flask</td></tr>
+                            <tr><td>RAG 應用開發：</td><td>具備 Retrieval-Augmented Generation (RAG) 技術實作經驗</td></tr>
+                            <tr><td>LLM 開發框架：</td><td>熟悉 LangChain、LlamaIndex</td></tr>
+                            <tr><td>Android 開發：</td><td>Android Studio</td></tr>
+                            <tr><td>版本控制：</td><td>Git</td></tr>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-        const data = {
-            labels: ['C++', 'Python', 'Java', 'PHP', 'SQL', 'HTML', 'CSS', 'JavaScript', 'VB'],
-            datasets: [{
-                data: [25, 30, 20, 5, 10, 5, 5, 10, 8],  // 新增 VB 的數據 (這裡假設 VB 為 8%)
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)',
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(100, 200, 150, 0.2)' // VB 的顏色
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(100, 200, 150, 1)' // VB 的邊框顏色
-                ],
-                borderWidth: 1
-            }]
-        };
-
-        const config = {
-            type: 'pie',
-            data: data,
-            options: {
-                maintainAspectRatio: false,
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'top',
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function (tooltipItem) {
-                                let label = tooltipItem.label;
-                                let value = tooltipItem.raw;
-                                return `${label}: ${value}%`;  // 顯示百分比
-                            }
-                        }
-                    }
-                }
-            }
-        };
-
-        // 生成圓形圖
-        const languageChart = new Chart(
-            document.getElementById('languageChart'),
-            config
-        );
-
-    </script>
+   
 
     <div class="project" id="project">
         <div class="space"></div>
@@ -457,6 +410,18 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="images/my_project5.jpg" class="card-img-top img-fluid" alt="ESG創新永續漁業管理資訊系統"
+                        style="width: 300px; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">ESG創新永續漁業管理資訊系統</h5>
+                        <p class="card-text">此系統基於 ESG 策略，專為台灣水產養殖業者設計開發，目標是推動水產養殖數位轉型，邁向淨零碳排永續經營。透過數據化管理、即時監控、大數據分析及生成式 AI 支援，此平台提供業者便捷的管理工具與報告生成功能。</p>
+                        <a href="https://github.com/WuReallyLeft/YTDownloaderAndPlayer" class="btn btn-primary">查看詳情</a>
+                    </div>
+                </div>
+            </div>
     </div>
 </body>
 
