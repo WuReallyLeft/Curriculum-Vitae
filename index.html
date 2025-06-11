@@ -1,428 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>履歷</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>履歷 - 鄭諺駿</title>
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#0f172a">
+    <meta name="description" content="履歷 - 鄭諺駿">
+    <link rel="manifest" id="manifest-placeholder">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <!-- 導覽列 -->
-        <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">履歷</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar1">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#bio">自傳</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#education">教育背景</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#LicenseAndCompetition">證照與比賽</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#experience">特殊經驗</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#proficiencies">專業技能</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#project">專案作品</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <div class="bg-animation"></div>
+    <div class="particles" id="particles"></div>
+
+    <div class="loading" id="loading">
+        <div class="loader"></div>
     </div>
 
-    <div class="bio" id="bio">
-        <div class="row">
-            <div class="space"></div>
-            <h1 class="text-center">關於我</h1>
-
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <div>
-                            <img src="images/my.jpg" alt="我的照片" class="img-fluid w-50 h-25">
-                        </div>                     
-                        <div  class="text-start mt-3 w-50  mx-auto">
-                            <img src="images/phone.jpg" alt="我的電話">
-                            <span>0903234986</span>
-                        </div>
-                        <div  class="text-start mt-3 w-50  mx-auto">
-                            <img src="images/mail.jpg" alt="我的電子信箱">
-                            <span>ss9898456@gmail.com</span>
-                        </div>
-                        <div  class="d-flex align-items-center  mt-3 w-50 mx-auto">
-                            <img src="images/github.jpg" alt="我的github" class="me-2">
-                            <a href="https://github.com/WuReallyLeft" class="text-nowrap">https://github.com/WuReallyLeft</a>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="col-md-12">
-                            <p>
-                                我是<strong>鄭諺駿</strong>聯合大學資管系大四生，從國中接觸程式設計課程開始，我對資訊科技領域產生了濃厚的興趣。隨著學習與實作經驗的累積，我逐漸發現自己對創造虛擬世界的熱情。這也讓我選擇了資訊管理科系，在學期間我學習了資料庫管理、程式設計、系統分析與設計、網路管理等重要課程，並在其中建立了扎實的資料處理、系統開發與資訊管理的基礎。
-                                在學校的專案中，我學到了如何將理論知識轉化為實務操作，這也更激發了我從事相關工作的熱情與動力。在一次專案中，我參與了ESG水產養殖系統設計，負責開發一個基於OpenAI技術的教學式聊天機器人，該機器人能解答使用者提出的總結性問題並提供學習指引。這個專案不僅讓我掌握了自然語言處理與聊天機器人設計的技術，也讓我鍛鍊了團隊合作與溝通能力。
-                            </p>
-                            <p>
-                                除了專業課程與專案經驗外，我也十分重視自我學習，並曾自主學習Python與API整合技術。這讓我能夠快速掌握專案所需的技術，並應對新技術的挑戰與應用。這樣的學習經歷，使我對未來職業生涯充滿了信心，也讓我對軟體開發的未來充滿期待。
-                                我希望未來能成為一名軟體工程師，並在數位轉型與智能製造領域中發揮所長。我對軟體開發充滿熱情，擅於從需求分析到程式實作的全流程工作，並持續學習最新的開發技術與工具。過去除了在專案中應用 OpenAI 及 RAG 技術，我也熟悉微服務架構、RESTful API、前後端整合。未來我希望能加入具有創新力的團隊，與跨領域同事合作，透過高品質的程式碼和穩定的系統設計，共同解決實際商業問題並持續優化使用者體驗。我相信自己能快速適應新環境，並以積極的學習態度和扎實的技術基礎，為公司帶來具體貢獻。
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-        </div>
-    </div>
-    <div class="education" id="education">
-        <div class="space"></div>
-        <h1 class="text-center">教育背景</h1>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card my-3 ms-3">
-                    <div class="card-body">
-                        <h5 class="card-title">立人國小</h5>
-                        <p class="card-text">畢業</p>
-                        <p class="card-text">2009年 - 2015年</p>
-                    </div>
-                </div>
-
-                <div class="card my-3 ms-3">
-                    <div class="card-body">
-                        <h5 class="card-title">漢口國中</h5>
-                        <p class="card-text">體育班</p>
-                        <p class="card-text">畢業</p>
-                        <p class="card-text">2015年 - 2018年</p>
-                    </div>
-                </div>
-
-                <div class="card my-3 ms-3">
-                    <div class="card-body">
-                        <h5 class="card-title">新民高中</h5>
-                        <p class="card-text">資料處理系</p>
-                        <p class="card-text">畢業</p>
-                        <p class="card-text">2018年 - 2021年</p>
-                    </div>
-                </div>
-
-                <div class="card my-3 ms-3">
-                    <div class="card-body">
-                        <h5 class="card-title">國立聯合大學</h5>
-                        <p class="card-text">資訊管理學系</p>
-                        <p class="card-text">就讀中</p>
-                        <p class="card-text">2021年 - 目前</p>
-                    </div>
-                </div>
+    <header class="header">
+        <div class="container">
+            <div class="profile-img">
+                <img src="images/my.jpg" alt="張小明的照片">
             </div>
-            <div id="myCarouse2" class="carousel slide col-md-6" data-bs-ride="carousel">
-                <!-- 輪播指示 -->
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#myCarouse2" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#myCarouse2" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#myCarouse2" data-bs-slide-to="2"></li>
-                </ol>
-                <!-- 輪播內容 -->
-                <div class="carousel-inner" data-bs-interval="2000">
-                    <div class="carousel-item active">
-                        <img src="images/score.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/score2.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/score3.jpg" class="d-block w-100">
-                    </div>
+            <h1 class="name">鄭諺駿</h1>
+            <!-- <p class="title">資深前端工程師 | Full Stack Developer</p> -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>ss9898456@email.com</span>
                 </div>
-                <!-- 輪播控制 -->
-                <a class="carousel-control-prev" href="#myCarouse2" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarouse2" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="LicenseAndCompetition" id="LicenseAndCompetition">
-        <div class="space"></div>
-        <h1 class="text-center">證照與比賽</h1>
-
-        <div class="row">
-            <div class="col-md-6 ">
-                <div class="card my-3 ms-3">
-                    <div class="card-body">
-                        <p class="card-text">技藝競賽程式設計組 校內初選 第一名</p>
-                        <p class="card-text">innoserv資訊系統組 校內初選 第二名</p>
-                        <p class="card-text">Planner of Enterprise Resource Planning ERP規劃師</p>
-                        <p class="card-text">電腦軟體應用丙級</p>
-                        <p class="card-text">會計事務-人工記帳丙級</p>
-                        <p class="card-text">會計能力測驗三級合格證書</p>
-                        <p class="card-text">TQC 電子商務概論 專業級</p>
-                        <p class="card-text">TQC 雲端技術與網頁服務 專業級</p>
-                        <p class="card-text">TQC Excel 2010 實用級</p>
-                        <p class="card-text">TQC 雲端服務商務人員</p>
-                        <p class="card-text">TQC 專業 e-Office人員</p>
-                        <p class="card-text">TQC 專業行銷人員</p>
-                    </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>0903234986</span>
                 </div>
-            </div>
-            <div id="myCarousel" class="carousel slide col-md-6" data-bs-ride="carousel">
-                <!-- 輪播指示 -->
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="6"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="7"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="8"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="9"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="10"></li>
-                </ol>
-                <!-- 輪播內容 -->
-                <div class="carousel-inner" data-bs-interval="2000">
-                    <div class="carousel-item active">
-                        <img src="images/my_license1.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/my_license2.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/my_license3.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/my_license4.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/my_license5.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/my_license6.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/my_license7.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/my_license8.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/my_license9.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/my_license10.jpg" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/my_license11.jpg" class="d-block w-100">
-                    </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span><a href="https://github.com/WuReallyLeft" target="_blank">https://github.com/WuReallyLeft</a></span>
                 </div>
-                <!-- 輪播控制 -->
-                <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="experience" id="experience">
-        <div class="space"></div>
-        <h1 class="text-center">特殊經驗</h1>
-
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card my-3">
-                    <div class="card-body">
-                        <h5 class="card-title">國立聯合大學 - 遠距偏鄉課輔計畫</h5>
-                        <p class="card-text">2022年</p>
-                        <p class="card-text">
-                            在國立聯合大學遠距偏鄉課輔計畫中，我擔任系統帶班的角色，負責管理設備問題和處理與大學伴的突發狀況。
-                        </p>
-                        <p class="card-text">
-                            作為系統帶班，我負責確保遠距課輔系統的順利運作。這包括管理和維護遠距課輔設備，解決任何設備故障或技術問題，以確保教學過程的順暢進行。我也負責回覆教學日誌，耐心解答教師和學生在課程中遇到的問題，並提供支援和建議。
-                        </p>
-                        <p class="card-text">
-                            這段實習經驗中，我學到了許多實際的技能。首先，我獲得了對遠距教學系統和設備的熟悉和操作能力。我學會了如何診斷和解決技術問題，並有效地管理教學設備。此外，我也發展了耐心和溝通能力，學會了以友善和專業的態度回覆教學日誌，並與教師和學生建立良好的互動。
-                        </p>
-                        <p class="card-text">
-                            這次實習經驗讓我更深深地了解了資訊管理領域的實際應用，並培養了我在解決問題、溝通和技術支援方面的能力。我期待將這些經驗和技能應用於未來的職業發展中，為組織和團隊帶來價值。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card my-3">
-                    <div class="card-body">
-                        <h5 class="card-title">國立聯合大學 - 暑期培訓計畫</h5>
-                        <p class="card-text">2023年 - 2024年</p>
-                        <p class="card-text">
-                            在國立聯合大學暑期計畫中，我同時擔任學生和老師的角色。這個計畫採取高年級學生教授低年級學生的模式，並由專業老師輔助，涵蓋前端、後端、資料庫、行動開發（Android）、人工智慧（AI）、物聯網（IoT）等領域的實作與經驗分享。
-                        </p>
-                        <p class="card-text">
-                            作為學生，我在這個暑期計畫中學習了程式設計的基礎知識，包括後端開發的基礎與進階技術、前端開發的基礎與進階技術、Android 應用開發，以及 ChatGPT API 的應用。
-                        </p>
-                        <p class="card-text">
-                            作為老師，我負責教授自己專題研究的內容，主要聚焦於 OpenAI API、LlamaIndex 及 RAG（檢索增強生成）的技術應用，幫助學員理解並實作這些技術。
-                        </p>
-                        <p class="card-text">
-                            這段經驗不僅讓我深化了自身的技術能力，也提升了教學與溝通能力，透過分享知識與實作練習，與學員共同成長。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card my-3">
-                    <div class="card-body">
-                        <h5 class="card-title">國立聯合大學 - 程式設計助教</h5>
-                        <p class="card-text">2024年 - 2025年</p>
-                        <p class="card-text">
-                            在擔任程式設計課程的助教期間，我的主要職責包括作業審查與學生指導。我們需要負責檢查這門課程的所有作業，並且要求學生當面展示他們的程式碼，確保其正確性與可讀性。這不僅需要具備細心的審查能力，也考驗我們的即時問題解決能力。
-                        </p>
-                        <p class="card-text">
-                            在審查過程中，我們不只是單純檢查程式是否能夠運行，而是進一步確認程式碼的結構、邏輯是否合理，以及是否符合最佳實踐（如變數命名、程式碼可讀性、效能優化等）。如果發現學生有理解上的盲點，或程式碼有邏輯錯誤，我們會現場進行指導，幫助學生釐清觀念，並引導他們思考如何改進程式碼，而不是直接給予答案。
-                        </p>
-                        <p class="card-text">
-                            這段助教經歷不僅強化了我的程式設計能力，也提升了我的溝通技巧與教學能力。面對不同背景與程度的學生，我學會如何用更清晰的方式解釋程式邏輯，並根據學生的理解程度調整教學方式。此外，這也讓我更加熟悉如何在團隊中協作，與其他助教共同維護課程品質，確保每位學生都能獲得良好的學習體驗。
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card my-3">
-                    <div class="card-body">
-                        <h5 class="card-title">國科會 - 大專生大專生研究計畫</h5>
-                        <p class="card-text">2024年 - 2025年</p>
-                        <p>本研究計畫遵循標準學術研究流程，涵蓋問題定義、文獻回顧、方法設計、系統實作與成果驗證。</p>
-                        <p>首先，透過摘要概述研究核心內容，並在研究動機與研究問題部分闡述研究背景與待解決之問題。</p>
-                        <p>接著，文獻回顧與探討分析現有研究成果，建立理論基礎。研究方法與系統架構則說明研究方法的選擇、實驗設計與系統實作細節。</p>
-                        <p>最後，成果說明呈現研究發現，驗證假設並進行討論。本計畫的完成不僅強化了研究能力，亦提升了數據分析、問題解決與技術實踐的能力。</p>
-                    </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span><a href="https://wureallyleft.github.io/Demonstration_of_strength/" target="_blank">Demonstration of strength</a></span>
                 </div>
             </div>
         </div>
+    </header>
 
-    </div>
+    <main class="container">
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-user"></i>
+                自傳
+            </h2>
+            <p>
+                我是鄭諺駿，是一位即將從聯合大學資訊管理系畢業的應屆生，自國中時期開始接觸基礎的程式設計課程，便對資訊科技世界產生了強烈的好奇與興趣。那時的我被簡單的圖形與邏輯所吸引，也第一次體會到「寫程式」是一種創造力的展現。這份熱情持續到了高中，大學，進而影響我選擇資訊相關科系作為我未來的學習與發展方向。
+            </p>
+            <br>
+            <p>
+                在學習的過程中，我不僅對資訊科技本身充滿熱情，也培養了良好的自學能力。課餘時間我經常透過線上課程、技術論壇、GitHub
+                專案等方式主動學習，進一步強化自己在程式設計與系統開發上的實力。這樣的主動學習習慣讓我在接觸新技術時能快速上手，也能在實作中保持好奇與思考。
+            </p>
+            <br>
+            <p>
+                我在國中奠定了程式基礎，高中時進一步學習演算法與網站製作。進入大學後，我系統性地學習了資料庫管理、物件導向程式設計、系統分析與設計、網路與資安、人工智慧等課程。在課堂外，我積極參與各項專案實作。特別是在參與
+                ESG 水產養殖系統設計專案中，我負責開發一個以 OpenAI 為基礎的教學型聊天機器人，協助解答總結性問題並提供學習建議。這個專案不僅讓我實際應用自然語言處理（NLP）與
+                RAG（Retrieval-Augmented Generation）技術，也鍛鍊了我與組員之間的溝通與協作能力。
+            </p>
+            <br>
+            <p>
+                此外，我也參與了由國科會主導的大專生研究計畫，並完整執行一個涵蓋標準學術流程的研究專案。從研究問題的定義、文獻回顧、方法設計、系統實作到成果驗證，每一個階段我都深入參與。過程中，我撰寫摘要以概述研究核心，明確闡述研究動機與問題；進行大量文獻整理以建立理論基礎；設計實驗流程與系統架構，實際完成系統開發與測試。
+            </p>
+            <br>
+            <p>
+                除了課堂學習與團隊專案，我也重視個人技術的累積與實戰經驗。我曾自主學習 Python、JavaScript 及 Flask、React 等技術，並嘗試整合第三方
+                API，開發小型應用。對於前後端整合與系統部署也有一定經驗，能獨立完成從資料處理、需求分析到實作與測試的流程。此外，我曾使用微服務架構設計系統，並熟悉 RESTful API
+                的設計與串接，了解現代軟體開發在模組化與彈性上的重要性。
+            </p>
+            <br>
+            <p>
+                技術上，我具備前後端開發能力，熟悉 HTML/CSS、React、Flask、Node.js 等技術，並能搭配 MySQL、MongoDB 等資料庫處理資料。在 AI 方面，我具備使用 OpenAI
+                API、LangChain、LlamaIndex 等進行 AI 聊天機器人與文件問答系統建置的經驗，也了解基本的模型部署與推論流程。這些能力使我能夠應對跨領域系統開發的挑戰，並快速學習尚未接觸的技術。
+            </p>
+            <br>
+            <p>
+                展望未來，我期望能進入軟體開發或系統設計相關職位，持續累積實務經驗並不斷精進技術。我對數位轉型、智慧製造與 AI
+                應用特別感興趣，希望能加入一個具有創新精神且鼓勵學習的團隊，與不同背景的夥伴協作，將技術轉化為真正解決問題的力量。我相信自己具備良好的學習態度、扎實的基礎能力與解決問題的熱情，未來能為公司創造實質價值，也持續成長為一名對社會有貢獻的軟體工程師。
+            </p>
+        </section>
 
-    <div class="proficiencies" id="proficiencies">
-        <div class="row">
-            <div class="space"></div>
-            <h1 class="text-center">專業技能</h1>
-
-            <!-- 程式語言 圓形圖 -->
-            <div class="col-md-6">
-                <div class="card my-3">
-                    <div class="card-body">
-                        <h5 class="card-title">程式語言</h5>
-                        <table>
-                            <tr><td>C++</td><td>★★★☆☆</td></tr>
-                            <tr><td>Python</td><td>★★★★☆</td></tr>
-                            <tr><td>Java</td><td>★★★☆☆</td></tr>
-                            <tr><td>PHP</td><td>★★☆☆☆</td></tr>
-                            <tr><td>HTML</td><td>★★★★☆</td></tr>
-                            <tr><td>CSS</td><td>★★★★☆</td></tr>
-                            <tr><td>JavaScript</td><td>★★★★☆</td></tr>
-                            <tr><td>VB</td><td>★★★☆☆</td></tr>
-                          </table>                          
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-code"></i>
+                技術技能
+            </h2>
+            <div class="skill-grid">
+                <div class="skill-category">
+                    <h3>程式語言</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">c++</span>
+                        <span class="skill-tag">VB</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">PHP</span>
                     </div>
                 </div>
-
-            </div>
-
-            <div class="col-md-6">
-                <div class="card my-3">
-                    <div class="card-body">
-                        <h5 class="card-title">框架開發</h5>
-                        <table>
-                            <tr><td>前端開發：</td><td>React</td></tr>
-                            <tr><td>後端開發：</td><td>Node.js, Flask</td></tr>
-                            <tr><td>RAG 應用開發：</td><td>具備 Retrieval-Augmented Generation (RAG) 技術實作經驗</td></tr>
-                            <tr><td>LLM 開發框架：</td><td>熟悉 LangChain、LlamaIndex</td></tr>
-                            <tr><td>Android 開發：</td><td>Android Studio</td></tr>
-                            <tr><td>版本控制：</td><td>Git</td></tr>
-                        </table>
+                <div class="skill-category">
+                    <h3>前端框架與技術</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Android Studio</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-   
-
-    <div class="project" id="project">
-        <div class="space"></div>
-        <h1 class="text-center my-5">專案作品</h1>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-3">
-                    <img src="images/my_project1.jpg" class="card-img-top img-fluid" alt="五子棋"
-                        style="width: 300px; height: 200px;">
-                    <div class="card-body">
-                        <h5 class="card-title">五子棋</h5>
-                        <p class="card-text">一個使用 BCB 實作的五子棋遊戲，具有雙人對戰遊戲模式。</p>
-                        <a href="https://github.com/WuReallyLeft/BCB-Gomoku" class="btn btn-primary">查看詳情</a>
+                <div class="skill-category">
+                    <h3>後端框架與技術</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LlamaIndex</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Hadoop Ecosystem (Hive, HBase, HDFS)</span>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card mb-3">
-                    <img src="images/my_project2.jpg" class="card-img-top img-fluid" alt="小朋友下樓梯"
-                        style="width: 300px; height: 200px;">
-                    <div class="card-body">
-                        <h5 class="card-title">小朋友下樓梯</h5>
-                        <p class="card-text">一個有趣的用BCB做的遊戲，玩家需要幫助小朋友下樓梯，躲避障礙物，挑戰高分。</p>
-                        <a href="https://github.com/WuReallyLeft/BCB-NS-SHAFT" class="btn btn-primary">查看詳情</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="images/my_project3.jpg" class="card-img-top img-fluid" alt="打磚塊"
-                        style="width: 300px; height: 200px;">
-                    <div class="card-body">
-                        <h5 class="card-title">YouTube 下載與播放平台</h5>
-                        <p class="card-text">這個專案是一個使用 Java 開發的 網頁伺服器，提供用戶搜尋 YouTube 影片並下載成 影片檔 或 音樂檔。此外，該平台還支援播放已下載的影片與音樂，提供流暢的使用體驗。</p>
-                        <a href="https://github.com/WuReallyLeft/YTDownloaderAndPlayer" class="btn btn-primary">查看詳情</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card mb-3">
-                    <img src="images/my_project4.jpg" class="card-img-top img-fluid" alt="水果訂單系統"
-                        style="width: 300px; height: 200px;">
-                    <div class="card-body">
-                        <h5 class="card-title">水果訂單系統</h5>
-                        <p class="card-text">一個使用 PHP 和 MySQL 資料庫開發的水果訂單管理系統，可以進行訂單管理和庫存管理。</p>
-                        <a href="https://github.com/WuReallyLeft/Fruit_order_system" class="btn btn-primary">查看詳情</a>
+                <div class="skill-category">
+                    <h3>開發工具與平台</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">Linux / Ubuntu</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="images/my_project5.jpg" class="card-img-top img-fluid" alt="ESG創新永續漁業管理資訊系統"
-                        style="width: 300px; height: 200px;">
-                    <div class="card-body">
-                        <h5 class="card-title">ESG創新永續漁業管理資訊系統</h5>
-                        <p class="card-text">此系統基於 ESG 策略，專為台灣水產養殖業者設計開發，目標是推動水產養殖數位轉型，邁向淨零碳排永續經營。透過數據化管理、即時監控、大數據分析及生成式 AI 支援，此平台提供業者便捷的管理工具與報告生成功能。</p>
-                        <a href="https://github.com/WuReallyLeft/YTDownloaderAndPlayer" class="btn btn-primary">查看詳情</a>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-briefcase"></i>
+                工作經驗
+            </h2>
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">遠距偏鄉課輔計畫</div>
+                        <div class="exp-company">國立聯合大學</div>
+                    </div>
+                    <div class="exp-date">2022</div>
+                </div>
+                <div class="exp-description">
+                    在國立聯合大學遠距偏鄉課輔計畫中，我擔任系統帶班的角色，負責管理設備問題和處理與大學伴的突發狀況。
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">程式設計助教</div>
+                        <div class="exp-company">國立聯合大學</div>
+                    </div>
+                    <div class="exp-date">2024 - 2025</div>
+                </div>
+                <div class="exp-description">
+                    在擔任程式設計課程的助教期間，我的主要職責包括作業審查與學生指導。我們需要負責檢查這門課程的所有作業，並且要求學生當面展示他們的程式碼，確保其正確性與可讀性。這不僅需要具備細心的審查能力，也考驗我們的即時問題解決能力。
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-rocket"></i>
+                專案作品
+            </h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3 class="project-title">YouTube 下載與播放平台</h3>
+                    <p>本專案是一個使用 Java 開發的 網頁伺服器，提供用戶搜尋 YouTube 影片並下載成 影片檔 或 音樂檔。此外，該平台還支援播放已下載的影片與音樂，提供流暢的使用體驗。</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">java</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">水果訂單系統</h3>
+                    <p>本專案是一個使用 PHP 和 MySQL 資料庫開發的水果訂單管理系統，可以進行訂單管理和庫存管理。</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">php</span>
+                        <span class="tech-tag">css</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">ESG創新永續漁業管理資訊系統</h3>
+                    <p>此系統基於 ESG 策略，專為台灣水產養殖業者設計開發，目標是推動水產養殖數位轉型，邁向淨零碳排永續經營。透過數據化管理、即時監控、大數據分析及生成式 AI
+                        支援，此平台提供業者便捷的管理工具與報告生成功能。</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">MySQL</span>
                     </div>
                 </div>
             </div>
-    </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-graduation-cap"></i>
+                教育背景
+            </h2>
+            <div class="education-item">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">資訊工程學系 學士</div>
+                        <div class="exp-company">國立聯合大學</div>
+                    </div>
+                    <div class="exp-date">2021 - 2025</div>
+                </div>
+                <div class="exp-description">
+                    主修資訊管理相關課程，如程式設計、資料結構、資料庫管理與企業資源規劃（ERP）等課程，並具備系統開發與資料處理的實作經驗。
+                    畢業專題為「ESG! 台灣水產養殖的淨零之道」，獲得校內innoserv資訊系統組校內初選第二名。
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-certificate"></i>
+                證照與認證
+            </h2>
+            <div class="skill-tags">
+                <span class="skill-tag">Planner of Enterprise Resource Planning ERP規劃師</span>
+                <span class="skill-tag">電腦軟體應用丙級</span>
+                <span class="skill-tag">會計事務-人工記帳丙級</span>
+                <span class="skill-tag">會計事務-資訊</span>
+                <span class="skill-tag">會計能力測驗三級合格證書</span>
+                <span class="skill-tag">TQC 電子商務概論 專業級</span>
+                <span class="skill-tag">TQC 雲端技術與網頁服務 專業級</span>
+                <span class="skill-tag">TQC Excel 2010 實用級</span>
+                <span class="skill-tag">TQC 雲端服務商務人員</span>
+                <span class="skill-tag">TQC 專業 e-Office人員</span>
+                <span class="skill-tag">TQC 專業行銷人員</span>
+            </div>
+        </section>
+    </main>
+
+    <button class="install-btn" id="installBtn" title="安裝應用程式">
+        <i class="fas fa-download"></i>
+    </button>
+
+    <script src="./js/script.js">
+
+    </script>
 </body>
 
 </html>
