@@ -241,6 +241,23 @@
      }
  }
 
+  a {
+    color: #4FC3F7;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #40B4C4;
+  }
+
+  a:hover {
+    color: #81D4FA;
+  }
+
+  a:active {
+    color: #29B6F6;
+  }
+
  /* Header */
         .header {
             padding: 1rem 0;
