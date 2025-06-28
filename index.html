@@ -10,6 +10,7 @@
     <meta name="theme-color" content="#0f172a">
     <meta name="description" content="履歷 - 鄭諺駿">
     <link rel="manifest" id="manifest-placeholder">
+    <!-- 確保 CSS 路徑正確 -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./images/Resume.ico">
     <!-- Fonts -->
@@ -18,270 +19,297 @@
 </head>
 
 <body>
+    <!-- 背景動畫 -->
     <div class="bg-animation"></div>
     <div class="particles" id="particles"></div>
 
+    <!-- 左側導覽列 -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="sidebar-nav">
+            <a href="#section-autobiography" class="nav-link"><i class="fas fa-user"></i><span>自傳</span></a>
+            <a href="#section-skills" class="nav-link"><i class="fas fa-code"></i><span>技術技能</span></a>
+            <a href="#section-experience" class="nav-link"><i class="fas fa-briefcase"></i><span>工作經驗</span></a>
+            <a href="#section-projects" class="nav-link"><i class="fas fa-rocket"></i><span>專案作品</span></a>
+            <a href="#section-education" class="nav-link"><i class="fas fa-graduation-cap"></i><span>教育背景</span></a>
+            <a href="#section-certifications" class="nav-link"><i class="fas fa-certificate"></i><span>證照與認證</span></a>
+        </nav>
+    </aside>
+
+    <!-- 讀取畫面 -->
     <div class="loading" id="loading">
         <div class="loader"></div>
     </div>
 
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="profile-section">
-                    <div class="profile-img">
-                        <img src="images/my.jpg" alt="我的照片">
+    <!-- 主內容區塊 -->
+    <div class="main-wrapper" id="main-wrapper">
+        <header class="header">
+            <div class="container">
+                <!-- 導覽列開關按鈕 -->
+                <button class="sidebar-toggle" id="sidebarToggle" title="打開導覽列">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="header-content">
+                    <div class="profile-section">
+                        <div class="profile-img">
+                            <img src="images/my.jpg" alt="我的照片">
+                        </div>
                     </div>
-                    
-                </div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h1 class="name">鄭諺駿</h1>
-                        <!-- <p class="title">資深前端工程師 | Full Stack Developer</p> -->
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>ss9898456@email.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>0903234986</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <span><a href="https://github.com/WuReallyLeft"
-                                target="_blank">https://github.com/WuReallyLeft</a></span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-trophy"></i>
-                        <span><a href="https://wureallyleft.github.io/Demonstration_of_strength/"
-                                target="_blank">Demonstration
-                                of strength</a></span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </header>
-
-    <main class="container">
-        <section class="section">
-            <h2 class="section-title">
-                <i class="fas fa-user"></i>
-                自傳
-            </h2>
-            <p>
-                我是鄭諺駿，是一位聯合大學資訊管理系畢業的應屆生，自國中時期開始接觸基礎的程式設計課程，便對資訊科技世界產生了強烈的好奇與興趣。當時透過撰寫簡單的程式，實現基本的互動邏輯與視覺效果，讓我深刻體會到程式語言的魅力與創造力。這份熱情延續至高中與大學，也成為我選擇資訊相關科系作為未來發展方向的關鍵動力。
-            </p>
-            <br>
-            <p>
-                在學習的過程中，我不僅對資訊科技本身充滿熱情，也培養了良好的自學能力。課餘時間我經常透過線上課程、技術論壇、GitHub
-                專案等方式主動學習，進一步強化自己在程式設計與系統開發上的實力。這樣的主動學習習慣讓我在接觸新技術時能快速上手，也能在實作中保持好奇與思考。
-            </p>
-            <br>
-            <p>
-                我在國中奠定了程式基礎，高中時進一步學習網站製作與手機App的製作。進入大學後，我系統性地學習了演算法、資料庫管理、物件導向程式設計、系統分析與設計、網路管理、人工智慧等課程。在大四的畢業專題中，我參與了 ESG 水產養殖系統設計專案，負責開發一個以 OpenAI 為基礎的教學型聊天機器人，能協助解答使用者提出的總結性問題並提供學習建議。這個專案讓我實際應用了自然語言處理（NLP）與 RAG（Retrieval-Augmented Generation）技術，也同時鍛鍊了我在團隊溝通與協作方面的能力。
-            </p>
-            <br>
-            <p>
-                此外，我也參與了由國科會主導的大專生研究計畫，並完整執行一個涵蓋標準學術流程的研究專案。從研究問題的定義、文獻回顧、方法設計、系統實作到成果驗證，每一個階段我都深入參與。過程中，我撰寫摘要以概述研究核心，明確闡述研究動機與問題；進行大量文獻整理以建立理論基礎；設計實驗流程與系統架構，實際完成系統開發與測試。
-            </p>
-            <br>
-            <p>
-                除了課堂學習與團隊專案，我也重視個人技術的累積與實戰經驗。我曾自主學習 Python、JavaScript 及 Flask、React 等技術，並嘗試整合第三方
-                API，開發小型應用。對於前後端整合與系統部署也有一定經驗，能獨立完成從資料處理、需求分析到實作與測試的流程。此外，我曾使用微服務架構設計系統，並熟悉 RESTful API
-                的設計與串接，了解現代軟體開發在模組化與彈性上的重要性。
-            </p>
-            <br>
-            <p>
-                技術上，我具備前後端開發能力，熟悉 HTML/CSS、React、Flask、Node.js 等技術，並能搭配 MySQL、MongoDB 等資料庫處理資料。在 AI 方面，我具備使用 OpenAI
-                API、LangChain、LlamaIndex 等進行 AI 聊天機器人與文件問答系統建置的經驗，也了解基本的模型部署與推論流程。這些能力使我能夠應對跨領域系統開發的挑戰，並快速學習尚未接觸的技術。
-            </p>
-            <br>
-            <p>
-                展望未來，我期望能進入軟體開發或系統設計相關職位，持續累積實務經驗並不斷精進技術。我對數位轉型、智慧製造與 AI
-                應用特別感興趣，希望能加入一個具有創新精神且鼓勵學習的團隊，與不同背景的夥伴協作，將技術轉化為真正解決問題的力量。我相信自己具備良好的學習態度、扎實的基礎能力與解決問題的熱情，未來能為公司創造實質價值，也持續成長為一名對社會有貢獻的軟體工程師。
-            </p>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">
-                <i class="fas fa-code"></i>
-                技術技能
-            </h2>
-            <div class="skill-grid">
-                <div class="skill-category">
-                    <h3>程式語言</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">c++</span>
-                        <span class="skill-tag">VB</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>前端框架與技術</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>後端框架與技術</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">RAG</span>
-                        <span class="skill-tag">LangChain</span>
-                        <span class="skill-tag">LlamaIndex</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Hadoop Ecosystem (Hive, HBase, HDFS)</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>開發工具與平台</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Android Studio</span>
-                        <span class="skill-tag">Linux / Ubuntu</span>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h1 class="name">鄭諺駿</h1>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ss9898456@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>0903234986</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span><a href="https://github.com/WuReallyLeft"
+                                    target="_blank">https://github.com/WuReallyLeft</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-trophy"></i>
+                            <span><a href="https://wureallyleft.github.io/Demonstration_of_strength/"
+                                    target="_blank">Demonstration
+                                    of strength</a></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
 
-        <section class="section">
-            <h2 class="section-title">
-                <i class="fas fa-briefcase"></i>
-                工作經驗
-            </h2>
-            <div class="experience-item">
-                <div class="exp-header">
-                    <div>
-                        <div class="exp-title">遠距偏鄉課輔計畫</div>
-                        <div class="exp-company">國立聯合大學</div>
-                    </div>
-                    <div class="exp-date">2022</div>
-                </div>
-                <div class="exp-description">
-                    在國立聯合大學遠距偏鄉課輔計畫中，我擔任系統帶班的角色，負責管理設備問題和處理與大學伴的突發狀況。
-                </div>
-            </div>
-            <div class="experience-item">
-                <div class="exp-header">
-                    <div>
-                        <div class="exp-title">程式設計助教</div>
-                        <div class="exp-company">國立聯合大學</div>
-                    </div>
-                    <div class="exp-date">2024 - 2025</div>
-                </div>
-                <div class="exp-description">
-                    在擔任程式設計課程的助教期間，我的主要職責包括作業審查與學生指導。我們需要負責檢查這門課程的所有作業，並且要求學生當面展示他們的程式碼，確保其正確性與可讀性。這不僅需要具備細心的審查能力，也考驗我們的即時問題解決能力。
-                </div>
-            </div>
-        </section>
+        <main class="container">
+            <section class="section" id="section-autobiography">
+                <h2 class="section-title">
+                    <i class="fas fa-user"></i>
+                    自傳
+                </h2>
+                <p>
+                    我是鄭諺駿，是聯合大學資訊管理系的應屆畢業生，國中開始接觸程式設計，透過撰寫簡單的程式，我第一次能夠感覺到邏輯的威力及視覺效果的奇妙，讓我對於資訊科技產生強烈的好奇與興趣。這份熱情延續至高中與大學，也成為我選擇資訊相關科系作為未來發展方向的關鍵動力。
+                </p>
+                <br>
+                <p>
+                    高中時進一步學習網站製作與手機App的製作。進入大學後，我系統性地學習了演算法、資料庫管理、物件導向程式設計、系統分析與設計、網路管理、人工智慧等課程。在大四的畢業專題中，我參與了 ESG
+                    水產養殖系統設計專案，負責開發一個以 OpenAI 為基礎的教學型聊天機器人，能協助解答使用者提出的總結性問題並提供學習建議。這個專案讓我實際應用了自然語言處理（NLP）與
+                    RAG（Retrieval-Augmented
+                    Generation）技術，也同時鍛鍊了我在團隊溝通與協作方面的能力。我也通過了國科會的大專生研究計畫申請，以台灣養殖綠色轉型為研究主題，從問題定義、文獻回顧、方法設計到系統實作與成果驗證，完整經歷了研究專案的各個階段。
+                </p>
+                <br>
+                <p>
+                    在學業表現方面，憑藉著對程式設計的深度投入與持續學習，我很榮幸能在系上保持第一名的成績。這不僅反映了我的學習成效，更重要的是展現了我對資訊領域的真誠投入。我深信這份對技術的純粹興趣，是我能夠持續深入學習並保持創新思維的重要動力。
+                </p>
+                <br>
+                <p>
+                    在學習的過程中，我不僅對資訊科技本身充滿熱情，也培養了良好的自學能力。課餘時間我經常透過線上課程、技術論壇、GitHub專案等方式主動學習，進一步強化自己在程式設計與系統開發上的實力。透過這些自主學習的經歷，我不僅累積了豐富的技術知識，更培養了批判思考、問題解決以及團隊協作等重要的軟實力。在執行
+                    ESG 水產養殖系統設計專案和國科會大專生研究計畫的過程中，我學會了如何與團隊成員有效協作溝通，如何在面對技術挑戰時保持冷靜並找出最佳解決方案，以及如何在接觸 AI 聊天機器人、RAG
+                    技術等新領域時保持學習的彈性。這樣的主動學習習慣讓我在接觸新技術時能快速上手，也能在實作中保持好奇與思考。
+                </p>
+                <br>
+                <p>
+                    此外，由於我自己對於程式開發的巨大熱情，因此時常自主學習各種語言及技術，例如 Python、JavaScript 及 Flask、React 等技術，並嘗試整合第三方
+                    API，開發小型應用。對於前後端整合與系統部署也多有接觸，目前已能獨立完成資料處理、需求分析、實作與測試等系統開發流程。學習過程中我也接觸了微服務架構，熟悉 RESTful API
+                    的設計與串接，了解現代軟體開發在模組化與彈性上的重要性。
+                </p>
+                <br>
+                <p>
+                    技術上，我具備前後端開發能力，熟悉 HTML/CSS、React、Flask、Node.js 等技術，並能搭配 MySQL、MongoDB 等資料庫處理資料。在 AI 方面，我具備使用 OpenAI
+                    API、LangChain、LlamaIndex 等進行 AI 聊天機器人與文件問答系統建置的經驗，也了解基本的模型部署與推論流程。這些能力使我能夠應對跨領域系統開發的挑戰，並快速學習尚未接觸的技術。
+                </p>
+                <br>
+                <p>
+                    透過這些學習與實作的經歷，我不僅建立了扎實的技術基礎，更重要的是培養了解決複雜問題的思維模式。從國中時期的程式設計啟蒙，到現在能夠運用 AI
+                    技術開發實用系統，每一個階段的成長都讓我更加確信自己對這個領域的熱忱。我相信技術的價值在於能夠解決真實世界的問題，而我希望能夠運用所學，在職場上持續發揮這份專業能力。
+                </p>
+                <br>
+                <p>
+                    展望未來，我期望能進入軟體開發或系統設計相關職位，持續累積實務經驗並不斷精進技術。我對數位轉型、智慧製造與 AI
+                    應用特別感興趣，希望能加入一個具有創新精神且鼓勵學習的團隊，與不同背景的夥伴協作，將技術轉化為真正解決問題的力量。我相信自己具備良好的學習態度、扎實的基礎能力與解決問題的熱情，未來能為公司創造實質價值，也持續成長為一名對社會有貢獻的軟體工程師。
+                </p>
+            </section>
 
-        <section class="section">
-            <h2 class="section-title">
-                <i class="fas fa-rocket"></i>
-                專案作品
-            </h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3 class="project-title">YouTube 下載與播放平台</h3>
-                    <p>本專案是一個使用 Java 開發的 網頁伺服器，提供用戶搜尋 YouTube 影片並下載成 影片檔 或 音樂檔。此外，該平台還支援播放已下載的影片與音樂，提供流暢的使用體驗。</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">java</span>
+            <section class="section" id="section-skills">
+                <h2 class="section-title">
+                    <i class="fas fa-code"></i>
+                    技術技能
+                </h2>
+                <div class="skill-grid">
+                    <div class="skill-category">
+                        <h3>程式語言</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">c++</span>
+                            <span class="skill-tag">VB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>前端框架與技術</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>後端框架與技術</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">RAG</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">LlamaIndex</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Hadoop Ecosystem (Hive, HBase, HDFS)</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>開發工具與平台</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Android Studio</span>
+                            <span class="skill-tag">Linux / Ubuntu</span>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <h3 class="project-title">水果訂單系統</h3>
-                    <p>本專案是一個使用 PHP 和 MySQL 資料庫開發的水果訂單管理系統，可以進行訂單管理和庫存管理。</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">php</span>
-                        <span class="tech-tag">css</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title">結合巨量資料分析探討 PTT 股版言論趨勢與熱門議題</h3>
-                    <p>本專案以台灣最大論壇 PTT 的「Stock」板為核心，透過巨量資料處理流程，分析投資人言論中的潛在訊息與群眾情緒。從資料爬取、文字清洗、匯入 Hive/MySQL/HBase，到使用 R
-                        語言進行視覺化分析，建構一套完整的資料處理與分析。</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">R</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Hadoop Ecosystem (Hive, HBase, HDFS)</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title">ESG創新永續漁業管理資訊系統</h3>
-                    <p>此系統基於 ESG 策略，專為台灣水產養殖業者設計開發，目標是推動水產養殖數位轉型，邁向淨零碳排永續經營。透過數據化管理、即時監控、大數據分析及生成式 AI
-                        支援，此平台提供業者便捷的管理工具與報告生成功能。</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">RAG</span>
-                        <span class="tech-tag">MySQL</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section">
-            <h2 class="section-title">
-                <i class="fas fa-graduation-cap"></i>
-                教育背景
-            </h2>
-            <div class="education-item">
-                <div class="exp-header">
-                    <div>
-                        <div class="exp-title">資訊工程學系 學士</div>
-                        <div class="exp-company">國立聯合大學</div>
+            <section class="section" id="section-experience">
+                <h2 class="section-title">
+                    <i class="fas fa-briefcase"></i>
+                    工作經驗
+                </h2>
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-title">遠距偏鄉課輔計畫</div>
+                            <div class="exp-company">國立聯合大學</div>
+                        </div>
+                        <div class="exp-date">2022</div>
                     </div>
-                    <div class="exp-date">2021 - 2025</div>
+                    <div class="exp-description">
+                        在國立聯合大學遠距偏鄉課輔計畫中，我擔任系統帶班的角色，負責管理設備問題和處理與大學伴的突發狀況。
+                    </div>
                 </div>
-                <div class="exp-description">
-                    主修資訊管理相關課程，如程式設計、資料結構、資料庫管理與企業資源規劃（ERP）等課程，並具備系統開發與資料處理的實作經驗。
-                    畢業專題為「ESG! 台灣水產養殖的淨零之道」，獲得校內innoserv資訊系統組校內初選第二名。
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-title">程式設計助教</div>
+                            <div class="exp-company">國立聯合大學</div>
+                        </div>
+                        <div class="exp-date">2024 - 2025</div>
+                    </div>
+                    <div class="exp-description">
+                        在擔任程式設計課程的助教期間，我的主要職責包括作業審查與學生指導。我們需要負責檢查這門課程的所有作業，並且要求學生當面展示他們的程式碼，確保其正確性與可讀性。這不僅需要具備細心的審查能力，也考驗我們的即時問題解決能力。
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section">
-            <h2 class="section-title">
-                <i class="fas fa-certificate"></i>
-                證照與認證
-            </h2>
-            <div class="skill-tags">
-                <span class="skill-tag">Planner of Enterprise Resource Planning ERP規劃師</span>
-                <span class="skill-tag">電腦軟體應用丙級</span>
-                <span class="skill-tag">會計事務-人工記帳丙級</span>
-                <span class="skill-tag">會計事務-資訊</span>
-                <span class="skill-tag">會計能力測驗三級合格證書</span>
-                <span class="skill-tag">TQC 電子商務概論 專業級</span>
-                <span class="skill-tag">TQC 雲端技術與網頁服務 專業級</span>
-                <span class="skill-tag">TQC Excel 2010 實用級</span>
-                <span class="skill-tag">TQC 雲端服務商務人員</span>
-                <span class="skill-tag">TQC 專業 e-Office人員</span>
-                <span class="skill-tag">TQC 專業行銷人員</span>
-            </div>
-        </section>
-    </main>
+            <section class="section" id="section-projects">
+                <h2 class="section-title">
+                    <i class="fas fa-rocket"></i>
+                    專案作品
+                </h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h4 class="project-category">個人專案</h4>
+                        <h3 class="project-title">YouTube 下載與播放平台</h3>
+                        <p>本專案是一個使用 Java 開發的 網頁伺服器，提供用戶搜尋 YouTube 影片並下載成 影片檔 或 音樂檔。此外，該平台還支援播放已下載的影片與音樂，提供流暢的使用體驗。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4 class="project-category">課堂專案</h4>
+                        <h3 class="project-title">水果訂單系統</h3>
+                        <p>本專案是一個使用 PHP 和 MySQL 資料庫開發的水果訂單管理系統，可以進行訂單管理和庫存管理。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4 class="project-category">個人專案</h4>
+                        <h3 class="project-title">結合巨量資料分析探討 PTT 股版言論趨勢與熱門議題</h3>
+                        <p>本專案以台灣最大論壇 PTT 的「Stock」板為核心，透過巨量資料處理流程，分析投資人言論中的潛在訊息與群眾情緒。從資料爬取、文字清洗、匯入 Hive/MySQL/HBase，到使用
+                            R 語言進行視覺化分析，建構一套完整的資料處理與分析。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">R</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Hadoop Ecosystem</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4 class="project-category">畢業專案</h4>
+                        <h3 class="project-title">ESG創新永續漁業管理資訊系統</h3>
+                        <p>此系統基於 ESG 策略，專為台灣水產養殖業者設計開發，目標是推動水產養殖數位轉型，邁向淨零碳排永續經營。透過數據化管理、即時監控、大數據分析及生成式 AI
+                            支援，此平台提供業者便捷的管理工具與報告生成功能。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="section-education">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    教育背景
+                </h2>
+                <div class="education-item">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-title">資訊工程學系 學士</div>
+                            <div class="exp-company">國立聯合大學</div>
+                        </div>
+                        <div class="exp-date">2021 - 2025</div>
+                    </div>
+                    <div class="exp-description">
+                        主修資訊管理相關課程，如程式設計、資料結構、資料庫管理與企業資源規劃（ERP）等課程，並具備系統開發與資料處理的實作經驗。
+                        畢業專題為「ESG! 台灣水產養殖的淨零之道」，獲得校內innoserv資訊系統組校內初選第二名。
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="section-certifications">
+                <h2 class="section-title">
+                    <i class="fas fa-certificate"></i>
+                    證照與認證
+                </h2>
+                <div class="skill-tags">
+                    <span class="skill-tag">Planner of Enterprise Resource Planning ERP規劃師</span>
+                    <span class="skill-tag">電腦軟體應用丙級</span>
+                    <span class="skill-tag">會計事務-人工記帳丙級</span>
+                    <span class="skill-tag">會計事務-資訊</span>
+                    <span class="skill-tag">會計能力測驗三級合格證書</span>
+                    <span class="skill-tag">TQC 電子商務概論 專業級</span>
+                    <span class="skill-tag">TQC 雲端技術與網頁服務 專業級</span>
+                    <span class="skill-tag">TQC Excel 2010 實用級</span>
+                    <span class="skill-tag">TQC 雲端服務商務人員</span>
+                    <span class="skill-tag">TQC 專業 e-Office人員</span>
+                    <span class="skill-tag">TQC 專業行銷人員</span>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <button class="install-btn" id="installBtn" title="安裝應用程式">
         <i class="fas fa-download"></i>
     </button>
 
-    <script src="./js/script.js">
-
-    </script>
+    <!-- 確保 JS 路徑正確 -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
